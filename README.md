@@ -43,3 +43,9 @@ The output for Dataset 1 can be given by:
     - We will select the model which had the maximum number of inliers and that will be our solution to P
 * To select the model for the sampled data set we used Least-Square model method similar to the way it was done for dataset-1
 * Few of the parameters that were chosen for our solution:
+    - N = number of iterations : *this was adaptively updated based on number inliers for each model*
+    - **N = log(1 - p) / log(1 - (1 - e)<sup>num_samples</sup>)**,  *where **p** = desired probability of the inliers, **e** = probability of the outliers, **num_samples** = number of samples of data we chose for each iteration.*
+    - number of sample = 3, minimum three equations are required to get the values of three parameters: *a, b and c* in *ax<sup>2</sup> + bx + c*
+    - p = 0.95, so that most of the points can be covered or described by the model
+    - e = 1 - inlier_count/total_data_size (it is adaptive)
+    - threshold = standard deviation of y/2, having a narrow boundary and checking maximum inliers in it increases the desired overall probability of the inliers.
