@@ -31,6 +31,9 @@ The output for Dataset 1 can be given by:
 
 ![Output for Dataset 1](https://github.com/nimbekarnd/RANSAC-Implementation-Python/blob/main/Output/Dataset1_1.png)
 
+We can see that the model estimated by least-square(LS) method (in red) and the one estimated by RANSAC method (blue) lie very close to each other. This suggests that LS method anyway shows good results with data that does not have abnormal points/noise/outliers.
+
+
 ### For Dataset 2
 
 * We can observe that few points (can be termed as outliers) in the this data set are far away from most of the points that are roughly following specific pattern/trend (quadratic curve)
@@ -50,12 +53,16 @@ The output for Dataset 1 can be given by:
     - e = 1 - inlier_count/total_data_size (it is adaptive)
     - threshold = standard deviation of y/2, having a narrow boundary and checking maximum inliers in it increases the desired overall probability of the inliers.
 
-The output for Dataset 2 can be given by:
+Representation of curves for dataset 2 when, threshold = standard deviation/2:
 
 ![Output for Dataset 2_1](https://github.com/nimbekarnd/RANSAC-Implementation-Python/blob/main/Output/Dataset2_1_TH_sd_by_2.png)
 
 
+Representation of curves for dataset 2 when, threshold = standard deviation/3:
+
 ![Output for Dataset 2_2](https://github.com/nimbekarnd/RANSAC-Implementation-Python/blob/main/Output/Dataset2_2_TH_sd_by_3.png)
 
+
+Representation of curves for dataset 2 when, threshold = standard deviation/5:
 
 ![Output for Dataset 2_3](https://github.com/nimbekarnd/RANSAC-Implementation-Python/blob/main/Output/Dataset2_3_TH_sd_by_5.png)
