@@ -27,4 +27,4 @@ On observing the two data sets we can see that in dataset-1 and dataset-2 the re
 
     P = (A<sup>T</sup>A)<sup>-1</sup>(A<sup>T</sup>Y)
 
-![Output for Dataset 1](https://github.com/nimbekarnd/RANSAC-Implementation-Python/blob/main/Output/DataSet1_1.png)
+![Output for Dataset 1](https://github.com/nimbekarnd/RANSAC-Implementation-Python/blob/main/Output/Dataset1_1.png)
