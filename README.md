@@ -57,12 +57,31 @@ Representation of curves for dataset 2 when, threshold = standard deviation/2:
 
 ![Output for Dataset 2_1](https://github.com/nimbekarnd/RANSAC-Implementation-Python/blob/main/Output/Dataset2_1_TH_sd_by_2.png)
 
+---
 
 Representation of curves for dataset 2 when, threshold = standard deviation/3:
 
 ![Output for Dataset 2_2](https://github.com/nimbekarnd/RANSAC-Implementation-Python/blob/main/Output/Dataset2_2_TH_sd_by_3.png)
 
+---
 
 Representation of curves for dataset 2 when, threshold = standard deviation/5:
 
 ![Output for Dataset 2_3](https://github.com/nimbekarnd/RANSAC-Implementation-Python/blob/main/Output/Dataset2_3_TH_sd_by_5.png)
+
+---
+## Instructions to run the code:
+
+python file named ‘modelfitting.py’ (location: /<directory_id>/Code/) is to be run for the execution of the code:
+	
+Please make sure the following files are at the same directory location/level:
+-	modelfitting.py
+-	ransac.py
+-	linearleastsquare.py
+-	data_1.csv
+-	data_2.csv
+
+Steps to run: Go the terminal where one can run python scripts (python 3.x):
+- in the terminal type and run: $ python modelfitting.py
+
+## Authors
