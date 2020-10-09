@@ -26,5 +26,20 @@ On observing the two data sets we can see that in dataset-1 and dataset-2 the re
 * Using least-square method to find the solution of P in the the equation AP = Y we get:
 
     P = (A<sup>T</sup>A)<sup>-1</sup>(A<sup>T</sup>Y)
+    
+The output for Dataset 1 can be given by:
 
 ![Output for Dataset 1](https://github.com/nimbekarnd/RANSAC-Implementation-Python/blob/main/Output/Dataset1_1.png)
+
+### For Dataset 2
+
+* We can observe that few points (can be termed as outliers) in the this data set are far away from most of the points that are roughly following specific pattern/trend (quadratic curve)
+• If we try to fit a curve using just least-square method, the curve might be shifted towards the outliers too in order to reduce the distance between them too and will not be able to describe the data better.
+• We can use RANSAC (RANdom SAmple Consensus) algorithm to fit a better curve that can describe the data-set better and also help in detecting/identifying the outliers too.
+• Another voting-based algorithm that can be used is Hough Transform. But it RANSAC is applicable for larger number of parameters than Hough Transform and parameters are easier to choose in RANSAC than in the former.
+* In RANASC, as the same suggests, we will sample few of the data points in our dataset and try fitting a curve to the sampled data.
+    - We count the number of points that whose distance from the line lie within a specific predefined threshold.
+    - Iterate again with new sample points , solve for the model, count the inliers and check whether the inlier count is greater than any of the previous ones.
+    - We will select the model which had the maximum number of inliers and that will be our solution to P
+* To select the model for the sampled data set we used Least-Square model method similar to the way it was done for dataset-1
+* Few of the parameters that were chosen for our solution:
