@@ -49,3 +49,13 @@ The output for Dataset 1 can be given by:
     - p = 0.95, so that most of the points can be covered or described by the model
     - e = 1 - inlier_count/total_data_size (it is adaptive)
     - threshold = standard deviation of y/2, having a narrow boundary and checking maximum inliers in it increases the desired overall probability of the inliers.
+
+The output for Dataset 2 can be given by:
+
+![Output for Dataset 2_1](https://github.com/nimbekarnd/RANSAC-Implementation-Python/blob/main/Output/Dataset2_1_TH_sd_by_2.png)
+
+
+![Output for Dataset 2_2](https://github.com/nimbekarnd/RANSAC-Implementation-Python/blob/main/Output/Dataset2_2_TH_sd_by_3.png)
+
+
+![Output for Dataset 2_3](https://github.com/nimbekarnd/RANSAC-Implementation-Python/blob/main/Output/Dataset2_3_TH_sd_by_5.png)
