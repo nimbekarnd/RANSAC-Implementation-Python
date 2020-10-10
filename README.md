@@ -90,3 +90,5 @@ Steps to run: Go the terminal where one can run python scripts (python 3.x):
 
 ## Author
 [Nupur Nimbekar](https://github.com/nimbekarnd)
+[Anubhav Paras](https://github.com/anubhavparas)
+[Akash Agarwal](https://github.com/akashaga09)
